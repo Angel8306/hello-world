@@ -3,3 +3,42 @@
    height: 90vh;
    object-fit: cover;
  }
+
+#title{
+  font-size: 4em;
+  color: purple;
+  font-family: 'Georgia'
+  font-weight: bold;
+}
+
+.halfrow{/* rgb is 0-255*/
+  background-color: #CF969D;
+  color: pink;
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+}
+.color{
+height:25vh;
+border:1px dashed black;
+}
+#color1{
+background-color:red
+}
+#color2{
+background-color:yellow
+}
+#color3{
+background-color:purple
+}
+#color4{
+background-color:orange
+}
+#color5{
+background-color:pink
+}
+ #pickacolor{
+   height:60vh;
+   width: 100%;
+   padding-top:30vh;
+   text-align:center;}

@@ -16,20 +16,86 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="colorpicker.css">
 
+ <script>
+   function randomColor(){
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+
+    var divtoedit = document.getElementById('pickacolor');
+    divtoedit.style.backgroundColor ='rgb('+red+','+green+','+blue+')';
+
+    document.getElementById('colorgenerated').innerHTML ='rgb('+red+','+green+','+blue+')';
+
+
+  }
+
+
+</script>
+
   </head>
+
   <body>
   <div class="container-fluid">
     <div class=row>
       <div class="col-sm-12">
-        About Angel Mochoge
+    <span id="title">About Angel Mochoge
       </div>
     </div>
 
   <div class="row">
      <div class="col-sm-12">
-      <img id=coverimage src="imgs/coverimage.jpg" alt="arcade game cabinets">
+      <img id=coverimage src="imgs/coverimage.jpg" alt="Track Field">
     </div>
   </div>
+
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="halfrow">
+      My favorite number: <br/>
+      3
+    </div>
+  </div>
+
+    <div class="col-sm-6">
+      <div class="halfrow">
+        My favorite song is: everytime <br>
+        <a href="https://www.youtube.com/watch?v=MYvjW3zdCws&list=RDFRCQ24V8eO8&index=2" target </a>
+          Ariana Grande-Everytime
+        </a>
+      </div>
+    </div>
 </div>
+
+    <div class= "row">
+      <div class="col-sm-2 offset-sm-1 color" id="color1">
+      </div>
+      <div class="col-sm-2 color"  id="color2">
+      </div>
+      <div class="col-sm-2 color" id="color3">
+      </div>
+      <div class="col-sm-2 color" id="color4">
+      </div>
+      <div class="col-sm-2 color" id="color5">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12" id="pickacolor">
+        <button class="btn btn-default"  onclick=randomColor()>
+         Get random color
+       </button>
+    <br/><br/>
+    <p id="colorgenerated"></p>
+  </div>
+</div>
+
+
+
+
+</div>
+
   </body>
     </html>
