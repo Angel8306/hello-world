@@ -41,4 +41,11 @@ background-color:pink
    height:60vh;
    width: 100%;
    padding-top:30vh;
-   text-align:center;}
+   text-align:center
+ }
+
+#paragraph{
+  background-color:#CF969D;
+  margin: 20px;
+
+}
